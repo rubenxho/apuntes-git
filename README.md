@@ -3,6 +3,7 @@
 - [Índice](#índice)
   - [Comandos Basicos](#comandos-basicos)
     - [git config](#git-config)
+    - [git pull](#git-pull)
     - [git status](#git-status)
 
 ---
@@ -51,6 +52,20 @@ El comando `git config` se utiliza para configurar variables específicas de Git
     [alias]
         aliasName = command
   ```
+
+**[⬆ Volver al Índice](#índice)**
+
+---
+
+#### **git pull**
+
+El comando `git pull` es utilizado para combinar los cambios de un repositorio remoto en tu repositorio local. Es una forma rápida de actualizar tu repositorio local con los cambios más recientes del repositorio remoto.
+  ```bash
+    git pull
+  ```
+
+**Enlace de interes**  
+**[git pull vs git fetch](#índice)**
 
 **[⬆ Volver al Índice](#índice)**
 
