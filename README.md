@@ -7,14 +7,14 @@
     - [git status](#git-status)
   - [Casos De Uso](#casos-de-uso)
   - [Complementos](#complementos)
-    - [Fichero gitignore](#fichero-gitignore)
     - [Comparación entre git pull y git fetch](#Comparación-entre-git-pull-y-git-fetch)
+    - [Fichero gitignore](#fichero-gitignore)
 
 ---
 
 ### Comandos Basicos
 
----
+--- 
 
 #### **git config**
 
@@ -92,16 +92,6 @@ El comando `git status` te permite mostrar el estado actual del repositorio.
 
 ---
 
-#### **Fichero gitignore**
-
-El archivo `.gitignore` es un archivo especial en un repositorio que le indica a Git qué archivos o patrones de archivos debe ignorar al realizar operaciones como git add y git commit. Esto significa que los archivos y directorios listados en el `.gitignore` no serán rastreados por Git.
-
-El propósito principal de usar `.gitignore` es evitar que se incluyan en el control de versiones archivos que no son relevantes para el desarrollo del proyecto o que pueden generarse automáticamente a partir de otros archivos.
-
-**[⬆ Volver al Índice](#índice)**
-
----
-
 #### **Comparación entre git pull y git fetch**
 
 `git fetch` descarga las referencias (ramas, etiquetas, etc.) de un repositorio remoto a tu repositorio local. Sin embargo, no fusiona estos cambios con tu rama actual. Básicamente, actualiza tu conocimiento sobre lo que ha sucedido en el repositorio remoto, pero no hace cambios en tu código local.
@@ -109,6 +99,16 @@ El propósito principal de usar `.gitignore` es evitar que se incluyan en el con
 `git pull` descarga las referencias (ramas, etiquetas, etc.) de un repositorio remoto a tu repositorio local, pero además, fusiona automáticamente los cambios de la rama remota en tu rama local. En otras palabras, `git pull` es básicamente un `git fetch` seguido de un `git merge`.
 
 En resumen, `git fetch` trae los cambios del repositorio remoto a tu repositorio local sin hacer ninguna fusión, mientras que `git pull` hace lo mismo pero además fusiona los cambios automáticamente en tu rama local actual.
+
+**[⬆ Volver al Índice](#índice)**
+
+---
+
+#### **Fichero gitignore**
+
+El archivo `.gitignore` es un archivo especial en un repositorio que le indica a Git qué archivos o patrones de archivos debe ignorar al realizar operaciones como git add y git commit. Esto significa que los archivos y directorios listados en el `.gitignore` no serán rastreados por Git.
+
+El propósito principal de usar `.gitignore` es evitar que se incluyan en el control de versiones archivos que no son relevantes para el desarrollo del proyecto o que pueden generarse automáticamente a partir de otros archivos.
 
 **[⬆ Volver al Índice](#índice)**
 
