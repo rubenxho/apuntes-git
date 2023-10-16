@@ -72,9 +72,9 @@ El comando `git fetch` es utilizado para obtener los últimos cambios de un repo
     git fetch
   ```
 
-**Enlaces de interes:**  
-**[git pull](#git-pull)**
-**[Comparación entre git pull y git fetch](#Comparación-entre-git-pull-y-git-fetch)**
+**Enlaces de interés:**  
+- **[Comando git pull](#git-pull)**
+- **[Comparación entre git pull y git fetch](#Comparación-entre-git-pull-y-git-fetch)**
 
 **[⬆ Volver al Índice](#índice)**
 
@@ -87,9 +87,9 @@ El comando `git pull` es utilizado para combinar los cambios de un repositorio r
     git pull
   ```
 
-**Enlaces de interes:**  
-**[git fetch](#git-fetch)**
-**[Comparación entre git pull y git fetch](#Comparación-entre-git-pull-y-git-fetch)**
+**Enlaces de interés:**  
+- **[Comando git fetch](#git-fetch)**
+- **[Comparación entre git pull y git fetch](#Comparación-entre-git-pull-y-git-fetch)**
 
 **[⬆ Volver al Índice](#índice)**
 
