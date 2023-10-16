@@ -1,0 +1,59 @@
+# Ignorar archivos y directorios generados automáticamente
+node_modules/
+dist/
+.cache/
+
+# Ignorar archivos de configuración locales
+.env
+
+# Ignorar archivos de respaldo de editores de texto
+*.swp
+*.swo
+*~
+
+# Ignorar archivos de registro y registros de errores
+npm-debug.log
+yarn-error.log
+
+# Ignorar archivos de dependencias específicos de npm
+package-lock.json
+yarn.lock
+
+# Ignorar archivos de configuración de sistema
+.DS_Store
+
+# Ignorar archivos de configuración de JetBrains IDEs
+.idea/
+
+# Ignorar archivos de configuración de Visual Studio Code
+.vscode/
+
+# Ignorar archivos de configuración de Sublime Text
+.sublime-project
+.sublime-workspace
+
+# Ignorar archivos de configuración de TextMate
+.tmproj
+*.tmproj
+
+# Ignorar archivos de configuración de Eclipse
+.project
+.classpath
+.settings/
+
+# Ignorar archivos de configuración de NetBeans
+nbproject/
+
+# Ignorar archivos de configuración de Windows
+Thumbs.db
+Desktop.ini
+
+# Ignorar archivos de configuración de macOS
+.AppleDouble
+.DS_Store
+
+# Ignorar archivos de configuración de Linux
+*~
+
+# Ignorar archivos de configuración de EditorConfig
+.editorconfig
