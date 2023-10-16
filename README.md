@@ -2,13 +2,14 @@
 
 - [Índice](#índice)
   - [Comandos Basicos](#comandos-basicos)
-    - [Git config](#git-config)
+    - [git config](#git-config)
+    - [git status](#git-status)
 
 ---
 
 ### Comandos Basicos
 
-#### **Git config**
+#### **git config**
 
 El comando `git config` se utiliza para configurar variables específicas de Git a nivel local o global.
 
@@ -54,3 +55,10 @@ El comando `git config` se utiliza para configurar variables específicas de Git
 **[⬆ Volver al Índice](#índice)**
 
 ---
+
+#### **git status**
+
+El comando `git status` mostrar el estado actual del repositorio.
+  ```bash
+    git status
+  ```
