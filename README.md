@@ -27,8 +27,6 @@ El comando `git clone` se utiliza para crear una copia local de un repositorio G
 
 **[⬆ Volver al Índice](#índice)**
 
----
-
 --- 
 
 #### **git config**
