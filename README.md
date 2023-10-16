@@ -12,27 +12,27 @@
 
 El comando `git config` se utiliza para configurar variables específicas de Git a nivel local o global.
 
-- Ver la configuración actual:
+**Ver la configuración actual:**
   ```bash
     git config --list
   ```
 
-- Configurar el nombre de usuario:
+**Configurar el nombre de usuario:**
   ```bash
     git config --global user.name "Name"
   ```
 
-- Configurar el correo electrónico:
+**Configurar el correo electrónico:**
   ```bash
     git config --global user.email "example@email.com"
   ```
 
-- Configurar alias:
+**Configurar alias:**
   ```bash
     git config --global alias.aliasName "command"
   ```
 
-- Usar alias:
+**Usar alias:**
   ```bash
     git aliasName 
   ```
@@ -42,7 +42,7 @@ El comando `git config` se utiliza para configurar variables específicas de Git
 
 
  
-Esta configuración se guarda en nuestra carpeta git/config y prodríamos ver algo como esto:
+**Esta configuración se guarda en nuestra carpeta git/config y prodríamos ver algo como esto:**
  ```bash
     [user]
         name = Name
