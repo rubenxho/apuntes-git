@@ -149,17 +149,6 @@ El comando `git pull` es utilizado para combinar los cambios de un repositorio r
 
 ---
 
-#### **git status**
-
-El comando `git status` te permite mostrar el estado actual del repositorio.
-  ```bash
-    git status
-  ```
-
-**[⬆ Volver al Índice](#índice)**
-
----
-
 #### **git stash**
 
 El comando `git stash` se utiliza para guardar temporalmente los cambios locales que no están listos para ser comprometidos en un área especial llamada "stash". Esto te permite cambiar de rama o realizar otras operaciones sin tener que comprometer tus cambios locales.
@@ -198,6 +187,17 @@ El comando `git stash` se utiliza para guardar temporalmente los cambios locales
 **Limpiar Todos los Stashes:**
   ```bash
     git stash clear
+  ```
+
+**[⬆ Volver al Índice](#índice)**
+
+---
+
+#### **git status**
+
+El comando `git status` te permite mostrar el estado actual del repositorio.
+  ```bash
+    git status
   ```
 
 **[⬆ Volver al Índice](#índice)**
