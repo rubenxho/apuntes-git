@@ -3,6 +3,7 @@
 - [Índice](#índice)
   - [Comandos Basicos](#comandos-basicos)
     - [git config](#git-config)
+    - [git fetch](#git-fetch)
     - [git pull](#git-pull)
     - [git status](#git-status)
   - [Casos De Uso](#casos-de-uso)
@@ -63,6 +64,22 @@ El comando `git config` se utiliza para configurar variables específicas de Git
 
 ---
 
+#### **git fetch**
+
+El comando `git fetch` es utilizado para obtener los últimos cambios de un repositorio remoto en tu repositorio local. Sin embargo, no fusiona estos cambios con tu rama actual.
+
+  ```bash
+    git fetch
+  ```
+
+**Enlaces de interes:**  
+**[git pull](#git-pull)**
+**[Comparación entre git pull y git fetch](#Comparación-entre-git-pull-y-git-fetch)**
+
+**[⬆ Volver al Índice](#índice)**
+
+---
+
 #### **git pull**
 
 El comando `git pull` es utilizado para combinar los cambios de un repositorio remoto en tu repositorio local. Es una forma rápida de actualizar tu repositorio local con los cambios más recientes del repositorio remoto.
@@ -70,7 +87,8 @@ El comando `git pull` es utilizado para combinar los cambios de un repositorio r
     git pull
   ```
 
-**Enlace de interes:**  
+**Enlaces de interes:**  
+**[git fetch](#git-fetch)**
 **[Comparación entre git pull y git fetch](#Comparación-entre-git-pull-y-git-fetch)**
 
 **[⬆ Volver al Índice](#índice)**
