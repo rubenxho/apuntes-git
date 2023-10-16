@@ -7,6 +7,7 @@
     - [git config](#git-config)
     - [git fetch](#git-fetch)
     - [git pull](#git-pull)
+    - [git stash](#git-stash)
     - [git status](#git-status)
   - [Casos De Uso](#casos-de-uso)
   - [Complementos](#complementos)
@@ -153,6 +154,50 @@ El comando `git pull` es utilizado para combinar los cambios de un repositorio r
 El comando `git status` te permite mostrar el estado actual del repositorio.
   ```bash
     git status
+  ```
+
+**[⬆ Volver al Índice](#índice)**
+
+---
+
+#### **git stash**
+
+El comando `git stash` se utiliza para guardar temporalmente los cambios locales que no están listos para ser comprometidos en un área especial llamada "stash". Esto te permite cambiar de rama o realizar otras operaciones sin tener que comprometer tus cambios locales.
+
+
+**Listar Stashes:**
+  ```bash
+    git stash list
+  ```
+
+**Guardar Cambios en el Stash:**
+  ```bash
+    git stash
+  ```
+
+**Guardar Cambios en el Stash con nombre:**
+  ```bash
+    git stash save <name>
+  ```
+
+**Aplicar y Eliminar un Stash:**
+  ```bash
+    git stash pop
+  ```
+
+**Aplicar un Cambio en especifico del Stash:**
+  ```bash
+    git stash apply N
+  ```
+
+**Eliminar un Stash Específico:**
+  ```bash
+    git stash drop N
+  ```
+
+**Limpiar Todos los Stashes:**
+  ```bash
+    git stash clear
   ```
 
 **[⬆ Volver al Índice](#índice)**
