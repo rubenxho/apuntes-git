@@ -5,10 +5,15 @@
     - [git config](#git-config)
     - [git pull](#git-pull)
     - [git status](#git-status)
+  - [Casos De Uso](#casos-de-uso)
+  - [Complementos](#complementos)
+    - [diferencia entre git pull y git fetch](#diferencia-entre-git-pull-y-git-fetch)
 
 ---
 
 ### Comandos Basicos
+
+---
 
 #### **git config**
 
@@ -80,3 +85,15 @@ El comando `git status` te permite mostrar el estado actual del repositorio.
 **[⬆ Volver al Índice](#índice)**
 
 ---
+
+### Complementos
+
+---
+
+#### **Diferencia entre git pull y git fetch**
+
+`git fetch` descarga las referencias (ramas, etiquetas, etc.) de un repositorio remoto a tu repositorio local. Sin embargo, no fusiona estos cambios con tu rama actual. Básicamente, actualiza tu conocimiento sobre lo que ha sucedido en el repositorio remoto, pero no hace cambios en tu código local.
+
+`git pull` descarga las referencias (ramas, etiquetas, etc.) de un repositorio remoto a tu repositorio local, pero además, fusiona automáticamente los cambios de la rama remota en tu rama local. En otras palabras, `git pull` es básicamente un `git fetch` seguido de un `git merge`.
+
+En resumen, `git fetch` trae los cambios del repositorio remoto a tu repositorio local sin hacer ninguna fusión, mientras que `git pull` hace lo mismo pero además fusiona los cambios automáticamente en tu rama local actual.
