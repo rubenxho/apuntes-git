@@ -61,6 +61,14 @@ El comando `git clone` se utiliza para crear una copia local de un repositorio G
     git checkout -d <branch_name>
   ```
 
+**Reenombrar una Rama:**
+  ```bash
+    git branch -m <old_name> <new_name>
+  ```
+
+
+  
+
 **[⬆ Volver al Índice](#índice)**
 
 --- 
