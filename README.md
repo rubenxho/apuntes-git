@@ -7,6 +7,7 @@
     - [git status](#git-status)
   - [Casos De Uso](#casos-de-uso)
   - [Complementos](#complementos)
+    - [Fichero gitignore](#fichero-gitignore)
     - [Comparación entre git pull y git fetch](#Comparación-entre-git-pull-y-git-fetch)
 
 ---
@@ -88,6 +89,16 @@ El comando `git status` te permite mostrar el estado actual del repositorio.
 ---
 
 ### Complementos
+
+---
+
+#### **Fichero gitignore**
+
+El archivo `.gitignore` es un archivo especial en un repositorio que le indica a Git qué archivos o patrones de archivos debe ignorar al realizar operaciones como git add y git commit. Esto significa que los archivos y directorios listados en el `.gitignore` no serán rastreados por Git.
+
+El propósito principal de usar `.gitignore` es evitar que se incluyan en el control de versiones archivos que no son relevantes para el desarrollo del proyecto o que pueden generarse automáticamente a partir de otros archivos.
+
+**[⬆ Volver al Índice](#índice)**
 
 ---
 
