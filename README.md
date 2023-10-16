@@ -2,6 +2,7 @@
 
 - [Índice](#índice)
   - [Comandos Basicos](#comandos-basicos)
+    - [git clone](#git-clone)
     - [git config](#git-config)
     - [git fetch](#git-fetch)
     - [git pull](#git-pull)
@@ -14,6 +15,19 @@
 ---
 
 ### Comandos Basicos
+
+---
+
+#### **git clone**
+
+El comando `git clone` se utiliza para crear una copia local de un repositorio Git existente. Básicamente, te permite descargar todo el historial de versiones, archivos y ramas de un repositorio remoto en tu máquina local.
+  ```bash
+    git clone REPOSITORY_URL
+  ```
+
+**[⬆ Volver al Índice](#índice)**
+
+---
 
 --- 
 
