@@ -58,7 +58,11 @@ El comando `git config` se utiliza para configurar variables específicas de Git
 
 #### **git status**
 
-El comando `git status` mostrar el estado actual del repositorio.
+El comando `git status` te permite mostrar el estado actual del repositorio.
   ```bash
     git status
   ```
+
+**[⬆ Volver al Índice](#índice)**
+
+---
