@@ -64,8 +64,7 @@ El comando `git pull` es utilizado para combinar los cambios de un repositorio r
     git pull
   ```
 
-**Enlace de interes**  
-**[git pull vs git fetch](#índice)**
+**Enlace de interes:**  **[git pull vs git fetch](#índice)**
 
 **[⬆ Volver al Índice](#índice)**
 
