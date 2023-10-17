@@ -44,35 +44,9 @@ El comando `git clone` es utilizado para gestionar ramas en un repositorio.
 #### **git clone**
 
 El comando `git clone` se utiliza para crear una copia local de un repositorio Git existente. Básicamente, te permite descargar todo el historial de versiones, archivos y ramas de un repositorio remoto en tu máquina local.
-  
-**Listar Ramas:**
-  ```bash
-    git branch
-  ```
 
-**Crear una Nueva Rama:**
   ```bash
-    git branch <branch_name>
-  ```
-
-**Cambiar a una Rama Existente:**
-  ```bash
-    git checkout <branch_name>
-  ```
-
-**Crear y Cambiar a una Nueva Rama:**
-  ```bash
-    git checkout -b <branch_name>
-  ```
-
-**Eliminar una Rama:**
-  ```bash
-    git checkout -d <branch_name>
-  ```
-
-**Reenombrar una Rama:**
-  ```bash
-    git branch -m <old_name> <new_name>
+    git clone REPOSITORY_URL
   ```
 
 **[⬆ Volver al Índice](#índice)**
