@@ -6,6 +6,7 @@
     - [git clone](#git-clone)
     - [git config](#git-config)
     - [git fetch](#git-fetch)
+    - [git merge](#git-merge)
     - [git pull](#git-pull)
     - [git remote](#git-remote)
     - [git stash](#git-stash)
@@ -132,6 +133,21 @@ El comando `git fetch` es utilizado para obtener los últimos cambios de un repo
 **Enlaces de interés:**  
 - **[Comando git pull](#git-pull)**
 - **[Comparación entre git pull y git fetch](#Comparación-entre-git-pull-y-git-fetch)**
+
+**[⬆ Volver al Índice](#índice)**
+
+---
+
+
+#### **git merge**
+
+El comando `git merge` se utiliza para combinar cambios de una rama a otra. Básicamente, toma los cambios de una rama fuente y los fusiona con otra rama objetivo. Esto puede ser útil cuando estás trabajando en un proyecto con múltiples ramas y deseas combinar el trabajo que has realizado en una rama específica con la rama principal o con otra rama.
+
+  ```bash
+    git merge <branch>
+  ```
+  
+Cuando ejecutas `git merge`, Git intentará combinar los cambios automáticamente. Sin embargo, en algunos casos, si hay conflictos (es decir, cambios incompatibles en el mismo lugar del código), Git no podrá hacer la fusión automáticamente y te pedirá que resuelvas los conflictos manualmente.
 
 **[⬆ Volver al Índice](#índice)**
 
