@@ -6,6 +6,7 @@
     - [git clone](#git-clone)
     - [git config](#git-config)
     - [git fetch](#git-fetch)
+    - [git log](#git-log)
     - [git merge](#git-merge)
     - [git pull](#git-pull)
     - [git remote](#git-remote)
@@ -134,6 +135,58 @@ El comando `git fetch` es utilizado para obtener los últimos cambios de un repo
 **Enlaces de interés:**  
 - **[Comando git pull](#git-pull)**
 - **[Comparación entre git pull y git fetch](#Comparación-entre-git-pull-y-git-fetch)**
+
+**[⬆ Volver al Índice](#índice)**
+
+---
+
+#### **git log**
+
+El comando `git log` es utilizado para ver el historial de commits en un repositorio. Este comando muestra una lista de los commits en orden cronológico inverso, lo que significa que el commit más reciente aparece primero.
+
+  ```bash
+    git log
+  ```
+
+Cada entrada del registro (log entry) muestra información sobre un commit, incluyendo:
+
+1- Commit Hash: Un identificador único para el commit, generalmente un conjunto de caracteres alfanuméricos.
+2- Autor: El nombre del autor del commit.
+3- Fecha y Hora: La fecha y hora en la que se realizó el commit.
+4- Mensaje del Commit: El mensaje asociado con el commit, que proporciona información sobre los cambios realizados.
+
+**Al ejecutar este comando veriamos algo como esto:**
+```bash
+    commit 6dcb09b8e12b4a1ae86f3398c8b04a67e2b2dc45 (HEAD -> main, origin/main)
+    Author: author <example@email.com>
+    Date:   Thu Sep 23 15:22:07 2021 -0700
+
+        message
+
+    commit 32a15e0cb64bfcbf00a07e845c071d9116717910
+    Author: author <example@email.com>
+    Date:   Wed Sep 22 09:18:54 2021 -0700
+
+        message
+  ```
+
+Puedes usar varios argumentos y opciones con git log para personalizar la salida según tus necesidades. Por ejemplo, puedes limitar la cantidad de commits mostrados, filtrar por autor, buscar commits que contengan ciertas palabras clave, entre otras cosas. 
+
+**Recomendado para verlo mejor:**
+```bash
+    git log —graph —pretty=oneline
+```
+
+**Al ejecutar este comando veriamos algo como esto:**
+```bash
+    * 42c31d1bb428d78d25251e855dcb0d06d0be2615 (HEAD -> main, origin/main) message
+    * 8c6cec21ba4158998e4699259ad096bb4e6b9a20 message   
+    * 5b8b9e5053a5e173e2806d9b4f883848232ee34c Merge pull request message
+    |\  
+    | * effba8cf48cf84a46f5894ec2b2529799cabfa2e (origin/branch) message
+    |/  
+    * 6a0ecb3fb75885d389c14e0a5549180897c4eedd message
+```
 
 **[⬆ Volver al Índice](#índice)**
 
