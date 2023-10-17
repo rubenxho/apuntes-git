@@ -30,14 +30,39 @@
 
 #### **git branch**
 
-El comando `git clone` es utilizado para gestionar ramas en un repositorio.
+El comando `git branch` es utilizado para gestionar ramas en un repositorio.
+ 
+**Listar Ramas:**
   ```bash
-    git clone REPOSITORY_URL
+    git branch
+  ```
+
+**Crear una Nueva Rama:**
+  ```bash
+    git branch <branch_name>
+  ```
+
+**Cambiar a una Rama Existente:**
+  ```bash
+    git checkout <branch_name>
+  ```
+
+**Crear y Cambiar a una Nueva Rama:**
+  ```bash
+    git checkout -b <branch_name>
+  ```
+
+**Eliminar una Rama:**
+  ```bash
+    git checkout -d <branch_name>
+  ```
+
+**Reenombrar una Rama:**
+  ```bash
+    git branch -m <old_name> <new_name>
   ```
 
 **[⬆ Volver al Índice](#índice)**
-
---- 
 
 ---
 
