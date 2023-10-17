@@ -26,7 +26,7 @@
 
 ---
 
-### Áreas de trabajos
+### Áreas de trabajo
 
 ---
 
