@@ -10,6 +10,7 @@
     - [git stash](#git-stash)
     - [git status](#git-status)
   - [Casos De Uso](#casos-de-uso)
+    - [Trabajar con ramas remotas](#Trabajar-con-ramas-remotas)
   - [Complementos](#complementos)
     - [Comparación entre git pull y git fetch](#Comparación-entre-git-pull-y-git-fetch)
     - [Fichero gitignore](#fichero-gitignore)
@@ -215,6 +216,33 @@ El comando `git status` te permite mostrar el estado actual del repositorio.
 `git pull` descarga las referencias (ramas, etiquetas, etc.) de un repositorio remoto a tu repositorio local, pero además, fusiona automáticamente los cambios de la rama remota en tu rama local. En otras palabras, `git pull` es básicamente un `git fetch` seguido de un `git merge`.
 
 En resumen, `git fetch` trae los cambios del repositorio remoto a tu repositorio local sin hacer ninguna fusión, mientras que `git pull` hace lo mismo pero además fusiona los cambios automáticamente en tu rama local actual.
+
+**[⬆ Volver al Índice](#índice)**
+
+---
+
+### Casos de uso
+
+---
+
+#### **Trabajar con ramas remotas**
+
+Para trabajar en una rama remota que no tienes en tu repositorio local, necesitas seguir estos pasos:
+
+**Descargar ultimos cambios del repositorio remoto:**
+  ```bash
+    git fetch
+  ```
+
+**Listar ramas locales y remotas del repositorio:**
+  ```bash
+    git branch -a
+  ```
+
+**Crear una copia local de la rama remota:**
+  ```bash
+    git checkout -b <remote_branch> origin/<remote_branch>
+  ```
 
 **[⬆ Volver al Índice](#índice)**
 
