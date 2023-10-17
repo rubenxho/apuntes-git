@@ -5,6 +5,7 @@
     - [git branch](#git-branch)
     - [git clone](#git-clone)
     - [git config](#git-config)
+    - [git diff](#git-diff)
     - [git fetch](#git-fetch)
     - [git log](#git-log)
     - [git merge](#git-merge)
@@ -119,6 +120,34 @@ El comando `git config` se utiliza para configurar variables específicas de Git
         email = example@email.com
     [alias]
         aliasName = command
+  ```
+
+**[⬆ Volver al Índice](#índice)**
+
+---
+
+#### **git diff**
+
+El comando `git diff` te permite ver las diferencias entre los cambios que has realizado en tu repositorio local y el estado actual del repositorio (ya sea el último commit o el estado en una rama específica). Es importante resaltar que solo muestra las diferencias; no realiza cambios en tu repositorio. Es una herramienta útil para entender qué cambios has realizado antes de confirmarlos con un commit.
+ 
+**Diferencias entre el área de trabajo y el área de ensayo (staging area):**
+  ```bash
+    git diff
+  ```
+
+**Diferencias entre el área de ensayo (staging area) y el último commit:**
+  ```bash
+    git diff --staged
+  ```
+
+**Diferencias entre dos commits:**
+  ```bash
+    git diff <commit1> <commit2>
+  ```
+
+**Diferencias entre una rama y otra:**
+  ```bash
+    git diff <branch1>..<branch2>
   ```
 
 **[⬆ Volver al Índice](#índice)**
