@@ -11,6 +11,7 @@
     - [git remote](#git-remote)
     - [git stash](#git-stash)
     - [git status](#git-status)
+    - [git tag](#git-tag)
   - [Casos De Uso](#casos-de-uso)
     - [Múltiples repositorios remotos](#Múltiples-repositorios-remotos)
     - [Trabajar con ramas remotas](#Trabajar-con-ramas-remotas)
@@ -146,7 +147,7 @@ El comando `git merge` se utiliza para combinar cambios de una rama a otra. Bás
   ```bash
     git merge <branch>
   ```
-  
+
 Cuando ejecutas `git merge`, Git intentará combinar los cambios automáticamente. Sin embargo, en algunos casos, si hay conflictos (es decir, cambios incompatibles en el mismo lugar del código), Git no podrá hacer la fusión automáticamente y te pedirá que resuelvas los conflictos manualmente.
 
 **[⬆ Volver al Índice](#índice)**
@@ -273,8 +274,52 @@ El comando `git stash` se utiliza para guardar temporalmente los cambios locales
 #### **git status**
 
 El comando `git status` te permite mostrar el estado actual del repositorio.
+
   ```bash
     git status
+  ```
+
+**[⬆ Volver al Índice](#índice)**
+
+---
+
+#### **git tag**
+
+El comando `git tag` se utiliza para etiquetar puntos específicos en la historia de un repositorio. Estas etiquetas se utilizan comúnmente para marcar versiones de software importantes (como versiones estables para producción) para que puedan ser fácilmente referenciadas en el futuro.
+
+**Listar todas las etiquetas:**
+  ```bash
+    git tag
+  ```
+
+**Crear una etiqueta ligera (Lightweight Tags):**
+  ```bash
+    git tag <name>
+  ```
+
+**Crear una etiqueta anotada (Annotated Tags):**
+  ```bash
+    git tag -a <name> -m "message"
+  ```
+
+**Buscar etiquetas con un patron:**
+  ```bash
+    git tag -l <pattern>
+  ```
+
+**Eliminar una etiqueta:**
+  ```bash
+    git tag -d <name>
+  ```
+
+**Compartir una etiqueta al repositorio remoto:**
+  ```bash
+    git push origin <name>
+  ```
+
+**Compartir varias etiquetas al repositorio remoto:**
+  ```bash
+    git push origin --tags
   ```
 
 **[⬆ Volver al Índice](#índice)**
