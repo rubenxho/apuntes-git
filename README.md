@@ -7,9 +7,11 @@
     - [git config](#git-config)
     - [git fetch](#git-fetch)
     - [git pull](#git-pull)
+    - [git remote](#git-remote)
     - [git stash](#git-stash)
     - [git status](#git-status)
   - [Casos De Uso](#casos-de-uso)
+    - [Múltiples repositorios remotos](#Múltiples-repositorios-remotos)
     - [Trabajar con ramas remotas](#Trabajar-con-ramas-remotas)
   - [Complementos](#complementos)
     - [Comparación entre git pull y git fetch](#Comparación-entre-git-pull-y-git-fetch)
@@ -138,6 +140,7 @@ El comando `git fetch` es utilizado para obtener los últimos cambios de un repo
 #### **git pull**
 
 El comando `git pull` es utilizado para combinar los cambios de un repositorio remoto en tu repositorio local. Es una forma rápida de actualizar tu repositorio local con los cambios más recientes del repositorio remoto.
+
   ```bash
     git pull
   ```
@@ -145,6 +148,63 @@ El comando `git pull` es utilizado para combinar los cambios de un repositorio r
 **Enlaces de interés:**  
 - **[Comando git fetch](#git-fetch)**
 - **[Comparación entre git pull y git fetch](#Comparación-entre-git-pull-y-git-fetch)**
+
+**[⬆ Volver al Índice](#índice)**
+
+---
+
+#### **git remote**
+
+El comando `git remote` es utilizado para administrar los repositorios remotos en Git. Puedes usarlo para ver, agregar y eliminar repositorios remotos asociados a tu proyecto. 
+
+**Listar nombres de los repositorios remotos asociados con tu proyecto:**
+  ```bash
+    git remote
+  ```
+
+**Listar nombres y url de los repositorios remotos asociados con tu proyecto:**
+  ```bash
+    git remote -v
+  ```
+
+**Agregar un nuevo repositorio remoto:**
+  ```bash
+    git remote add <name> <url>
+  ```
+
+**Elimina un repositorio remoto:**
+  ```bash
+    git remote remove <name>
+  ```
+
+**Renombra un repositorio remoto:**
+  ```bash
+    git remote rename <name> <new_name>
+  ```
+
+**Cambia la URL de un repositorio remoto:**
+  ```bash
+    git remote set-url <name> <url>
+  ```
+
+**Traer cambios desde un repositorio remoto:**
+  ```bash
+    git fetch <name>
+  ```
+
+**Traer y fusionar cambios desde un repositorio remoto:**
+  ```bash
+    git pull <name> <branch>
+  ```
+
+**Enviar cambios a un repositorio remoto:**
+  ```bash
+    git push <name> <branch>
+  ```
+
+**Enlaces de interés:**  
+- **[Múltiples repositorios remotos](#Múltiples-repositorios-remotos)**
+- **[Trabajar con ramas remotas](#Trabajar-con-ramas-remotas)**
 
 **[⬆ Volver al Índice](#índice)**
 
@@ -205,23 +265,60 @@ El comando `git status` te permite mostrar el estado actual del repositorio.
 
 ---
 
-### Complementos
+### Casos de uso
 
 ---
 
-#### **Comparación entre git pull y git fetch**
+#### **Múltiples repositorios remotos**
 
-`git fetch` descarga las referencias (ramas, etiquetas, etc.) de un repositorio remoto a tu repositorio local. Sin embargo, no fusiona estos cambios con tu rama actual. Básicamente, actualiza tu conocimiento sobre lo que ha sucedido en el repositorio remoto, pero no hace cambios en tu código local.
+Para trabajar con múltiples repositorios remotos, podemos trabajar de la siguiente manera:
 
-`git pull` descarga las referencias (ramas, etiquetas, etc.) de un repositorio remoto a tu repositorio local, pero además, fusiona automáticamente los cambios de la rama remota en tu rama local. En otras palabras, `git pull` es básicamente un `git fetch` seguido de un `git merge`.
+**Clonar un repositorio remoto que sera mi origin:**
+  ```bash
+    git clone <url> 
+  ```
 
-En resumen, `git fetch` trae los cambios del repositorio remoto a tu repositorio local sin hacer ninguna fusión, mientras que `git pull` hace lo mismo pero además fusiona los cambios automáticamente en tu rama local actual.
+**Agregar otro repositorio remoto:**
+  ```bash
+    git remote add <name> <url>
+  ```
+
+**Listado de repositorios remotos con url:**
+  ```bash
+    git remote -v
+  ```
+
+Ya estamos trabajando con dos repositorios, todos los cambios sin indicar el repositorio se subiran al origin, 
+ahora vamos a subir cambios a los repositorios:
+
+**Subir cambios al repositorio origin:**
+  ```bash
+    git add .
+    git commit -m "message"
+    git push
+  ```
+
+**Subir cambios a otro repositorio:**
+  ```bash
+    git push <name> <branch>
+  ```
+
+En caso que necesite traer cambios de otro repositorio remoto a mi repositorio origin, debo hacer lo siguiente:
+
+**Traer y fusionar cambios de otro repositorio:**
+  ```bash
+    git pull <name> <name>
+  ```
+
+**Subir cambios a mi repositorio origin:**
+  ```bash
+    git push origin <branch>
+  ```
+
+**Enlaces de interés:**  
+- **[git remote](#git-remote)**
 
 **[⬆ Volver al Índice](#índice)**
-
----
-
-### Casos de uso
 
 ---
 
@@ -243,6 +340,25 @@ Para trabajar en una rama remota que no tienes en tu repositorio local, necesita
   ```bash
     git checkout -b <remote_branch> origin/<remote_branch>
   ```
+
+**Enlaces de interés:**  
+- **[git remote](#git-remote)**
+
+**[⬆ Volver al Índice](#índice)**
+
+---
+
+### Complementos
+
+---
+
+#### **Comparación entre git pull y git fetch**
+
+`git fetch` descarga las referencias (ramas, etiquetas, etc.) de un repositorio remoto a tu repositorio local. Sin embargo, no fusiona estos cambios con tu rama actual. Básicamente, actualiza tu conocimiento sobre lo que ha sucedido en el repositorio remoto, pero no hace cambios en tu código local.
+
+`git pull` descarga las referencias (ramas, etiquetas, etc.) de un repositorio remoto a tu repositorio local, pero además, fusiona automáticamente los cambios de la rama remota en tu rama local. En otras palabras, `git pull` es básicamente un `git fetch` seguido de un `git merge`.
+
+En resumen, `git fetch` trae los cambios del repositorio remoto a tu repositorio local sin hacer ninguna fusión, mientras que `git pull` hace lo mismo pero además fusiona los cambios automáticamente en tu rama local actual.
 
 **[⬆ Volver al Índice](#índice)**
 
