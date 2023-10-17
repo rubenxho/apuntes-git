@@ -1,7 +1,7 @@
 ## Índice
 
 - [Índice](#índice)
-  - [Áreas de trabajo](#areas-de-trabajo)
+  - [Áreas de trabajo](#áreas-de-trabajo)
   - [Comandos Basicos](#comandos-basicos)
     - [git branch](#git-branch)
     - [git clone](#git-clone)
