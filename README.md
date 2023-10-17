@@ -12,12 +12,14 @@
     - [git remote](#git-remote)
     - [git stash](#git-stash)
     - [git status](#git-status)
+    - [git switch](#git-switch)
     - [git tag](#git-tag)
   - [Casos De Uso](#casos-de-uso)
     - [Múltiples repositorios remotos](#Múltiples-repositorios-remotos)
     - [Trabajar con ramas remotas](#Trabajar-con-ramas-remotas)
   - [Complementos](#complementos)
     - [Comparación entre git pull y git fetch](#Comparación-entre-git-pull-y-git-fetch)
+    - [Comparación entre git switch y git checkout](#Comparación-entre-git-switch-y-git-checkout)
     - [Fichero gitignore](#fichero-gitignore)
 
 ---
@@ -336,6 +338,27 @@ El comando `git status` te permite mostrar el estado actual del repositorio.
 
 ---
 
+#### **git switch**
+
+El comando `git switch` se utiliza para cambiar entre ramas en un repositorio.
+
+**Cambiarme a una rama:**
+  ```bash
+    git switch <branch>
+  ```
+
+**Crear una rama y cambiarme a ella:**
+  ```bash
+    git switch -c <branch>
+  ```
+
+**Enlaces de interés:**  
+- **[Comparación entre git switch y git checkout](#Comparación-entre-git-switch-y-git-checkout)**
+
+**[⬆ Volver al Índice](#índice)**
+
+---
+
 #### **git tag**
 
 El comando `git tag` se utiliza para etiquetar puntos específicos en la historia de un repositorio. Estas etiquetas se utilizan comúnmente para marcar versiones de software importantes (como versiones estables para producción) para que puedan ser fácilmente referenciadas en el futuro.
@@ -473,6 +496,18 @@ Para trabajar en una rama remota que no tienes en tu repositorio local, necesita
 `git pull` descarga las referencias (ramas, etiquetas, etc.) de un repositorio remoto a tu repositorio local, pero además, fusiona automáticamente los cambios de la rama remota en tu rama local. En otras palabras, `git pull` es básicamente un `git fetch` seguido de un `git merge`.
 
 En resumen, `git fetch` trae los cambios del repositorio remoto a tu repositorio local sin hacer ninguna fusión, mientras que `git pull` hace lo mismo pero además fusiona los cambios automáticamente en tu rama local actual.
+
+**[⬆ Volver al Índice](#índice)**
+
+---
+
+#### **Comparación entre git switch y git checkout**
+
+`git switch` fue introducido  con el propósito específico de cambiar entre ramas. Su sintaxis es más concisa y se centra principalmente en el cambio de ramas.
+
+`git checkout` es un comando más antiguo y versátil que puede utilizarse para muchas otras operaciones además de cambiar entre ramas. Su sintaxis es más amplia y puede utilizarse para una variedad de operaciones, como la creación de nuevas ramas, deshacer cambios o moverte a un commit específico.
+
+En resumen, `git switch` está diseñado para hacer cambios entre ramas de manera más segura. No permite cambiar a una rama si hay cambios sin commitear que puedan entrar en conflicto con los cambios de la nueva rama. mientras que `git checkout` puede ser usado para cambiar entre ramas incluso si tienes cambios sin commitear. Esto puede llevar a la pérdida de cambios si no se maneja correctamente..
 
 **[⬆ Volver al Índice](#índice)**
 
