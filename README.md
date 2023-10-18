@@ -19,6 +19,7 @@
     - [git merge](#git-merge)
     - [git pull](#git-pull)
     - [git push](#git-push)
+    - [git reflog](#git-reflog)
     - [git remote](#git-remote)
     - [git stash](#git-stash)
     - [git status](#git-status)
@@ -336,6 +337,36 @@ El comando `git push` es utilizado para enviar los commits locales (es decir, lo
   ```
 
 Con este comando pasaremos nuestros cambios del `Local Repository` al `Remote Repository`.
+
+**[⬆ Volver al Índice](#índice)**
+
+---
+
+#### **git reflog**
+
+El comando `git reflog` es utilizado para ver el registro de referencia de Git, que es una lista detallada de los cambios de posición de las referencias de Git a lo largo del tiempo. Esto incluye los cambios de posición de las ramas (como HEAD, ramas locales y ramas remotas) y etiquetas.
+
+Este comando es útil para recuperar cambios perdidos o deshacer acciones accidentalmente realizadas, ya que proporciona un historial detallado de las operaciones que has realizado en tu repositorio local.
+
+  ```bash
+    git reflog
+  ```
+
+**Al ejecutar este comando veriamos algo como esto:** 
+  ```bash
+    2d2c7e5 (HEAD -> master) HEAD@{0}: commit: Fixed issue #123
+    a1b2c3d HEAD@{1}: commit: Updated README.md
+    3e4f5g6 HEAD@{2}: checkout: moving from feature-branch to master
+    56789ab HEAD@{3}: commit (merge): Merge branch 'feature-branch'
+  ```
+
+Cada entrada en la lista proporciona información sobre:
+
+ 1. **El hash del commit (2d2c7e5, a1b2c3d, etc.):** Este es un identificador único para un commit en Git.
+ 2. **La referencia (HEAD, master, etc.):** Indica la referencia que se movió en esa operación (por ejemplo, HEAD o el nombre de una rama).
+ 3. **El tipo de acción (commit, checkout, merge, etc.):** Indica qué tipo de operación se realizó.
+ 4. **El mensaje del commit:** Proporciona el mensaje asociado con el commit.
+
 
 **[⬆ Volver al Índice](#índice)**
 
