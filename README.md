@@ -2,6 +2,11 @@
 
 - [Índice](#índice)
   - [Áreas de trabajo](#áreas-de-trabajo)
+    - [Stash](#stash)
+    - [Working Directory](#working-directory)
+    - [Staging Area](#staging-area)
+    - [Local Repository](#local-repository)
+    - [Remote Repository](#remote-repository)
   - [Comandos Basicos](#comandos-basicos)
     - [git branch](#git-branch)
     - [git clone](#git-clone)
@@ -30,15 +35,22 @@
 
 ---
 
-1. **Stash:** Es el área donde se puede guardar temporalmente los cambios que no se han hecho commit. Esto permite cambiar de rama o realizar otras operaciones sin tener que hacer un commit de los cambios actuales. Puede almacenar n estados y funciona como una pila, colocando siempre de primero los últimos cambios que salvemos.
+### **Stash** 
+Es el área donde se puede guardar temporalmente los cambios que no se han hecho commit. Esto permite cambiar de rama o realizar otras operaciones sin tener que hacer un commit de los cambios actuales. Puede almacenar n estados y funciona como una pila, colocando siempre de primero los últimos cambios que salvemos.
 
-2. **Working Directory:**  Es el lugar donde trabajas con los archivos de tu proyecto. Aquí es donde creas, modificas y eliminas archivos. Los cambios que haces en esta zona no se registran automáticamente en Git.
+### **Working Directory**  
+Es el lugar donde trabajas con los archivos de tu proyecto. Aquí es donde creas, modificas y eliminas archivos. Los cambios que haces en esta zona no se registran automáticamente en Git.
 
-3. **Staging Area:** Es un área intermedia entre tu directorio de trabajo y tu repositorio local. Aquí colocas los archivos que quieres incluir en tu próximo commit. Puedes pensar en esta zona como un "escenario" donde preparas lo que se va a guardar en el siguiente commit.
+### **Staging Area** 
+Es un área intermedia entre tu directorio de trabajo y tu repositorio local. Aquí colocas los archivos que quieres incluir en tu próximo commit. Puedes pensar en esta zona como un "escenario" donde preparas lo que se va a guardar en el siguiente commit.
 
-4. **Local Repository:** Es donde Git almacena permanentemente la historia de tus commits. Es una carpeta oculta llamada .git dentro de tu directorio de trabajo. Aquí se encuentran todos los commits y las ramas de tu proyecto.
+### **Local Repository** 
+Es donde Git almacena permanentemente la historia de tus commits. Es una carpeta oculta llamada .git dentro de tu directorio de trabajo. Aquí se encuentran todos los commits y las ramas de tu proyecto.
 
-5. **Remote Repository:** Es una copia del repositorio local que se encuentra en un servidor remoto. Permite la colaboración entre diferentes desarrolladores al proporcionar un lugar centralizado donde se pueden cargar (push) y descargar (pull) los cambios.
+### **Remote Repository** 
+Es una copia del repositorio local que se encuentra en un servidor remoto. Permite la colaboración entre diferentes desarrolladores al proporcionar un lugar centralizado donde se pueden cargar (push) y descargar (pull) los cambios.
+
+**[⬆ Volver al Índice](#índice)**
 
 ---
 
