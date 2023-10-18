@@ -35,19 +35,19 @@
 
 ---
 
-### **Stash** 
+#### **Stash** 
 Es el área donde se puede guardar temporalmente los cambios que no se han hecho commit. Esto permite cambiar de rama o realizar otras operaciones sin tener que hacer un commit de los cambios actuales. Puede almacenar n estados y funciona como una pila, colocando siempre de primero los últimos cambios que salvemos.
 
-### **Working Directory**  
+#### **Working Directory**  
 Es el lugar donde trabajas con los archivos de tu proyecto. Aquí es donde creas, modificas y eliminas archivos. Los cambios que haces en esta zona no se registran automáticamente en Git.
 
-### **Staging Area** 
+#### **Staging Area** 
 Es un área intermedia entre tu directorio de trabajo y tu repositorio local. Aquí colocas los archivos que quieres incluir en tu próximo commit. Puedes pensar en esta zona como un "escenario" donde preparas lo que se va a guardar en el siguiente commit.
 
-### **Local Repository** 
+#### **Local Repository** 
 Es donde Git almacena permanentemente la historia de tus commits. Es una carpeta oculta llamada .git dentro de tu directorio de trabajo. Aquí se encuentran todos los commits y las ramas de tu proyecto.
 
-### **Remote Repository** 
+#### **Remote Repository** 
 Es una copia del repositorio local que se encuentra en un servidor remoto. Permite la colaboración entre diferentes desarrolladores al proporcionar un lugar centralizado donde se pueden cargar (push) y descargar (pull) los cambios.
 
 **[⬆ Volver al Índice](#índice)**
