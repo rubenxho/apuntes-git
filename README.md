@@ -249,10 +249,10 @@ El comando `git log` es utilizado para ver el historial de commits en un reposit
 
 Cada entrada del registro (log entry) muestra información sobre un commit, incluyendo:
 
-1- Commit Hash: Un identificador único para el commit, generalmente un conjunto de caracteres alfanuméricos.
-2- Autor: El nombre del autor del commit.
-3- Fecha y Hora: La fecha y hora en la que se realizó el commit.
-4- Mensaje del Commit: El mensaje asociado con el commit, que proporciona información sobre los cambios realizados.
+  1. **Commit Hash**: Un identificador único para el commit, generalmente un conjunto de caracteres alfanuméricos.
+  2. **Autor:** El nombre del autor del commit.
+  3. **Fecha y Hora:** La fecha y hora en la que se realizó el commit.
+  4. **Mensaje del Commit:** El mensaje asociado con el commit, que proporciona información sobre los cambios realizados.
 
 **Al ejecutar este comando veriamos algo como esto:**
 ```bash
