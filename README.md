@@ -8,6 +8,7 @@
     - [Local Repository](#local-repository)
     - [Remote Repository](#remote-repository)
   - [Comandos Basicos](#comandos-basicos)
+    - [git add](#git-add)
     - [git branch](#git-branch)
     - [git clone](#git-clone)
     - [git config](#git-config)
@@ -57,6 +58,24 @@ Es una copia del repositorio local que se encuentra en un servidor remoto. Permi
 ### Comandos Basicos
 
 ---
+
+#### **git add**
+
+El comando `git add` se utiliza para preparar archivos o cambios específicos para ser incluidos en el próximo commit. Básicamente, añade los cambios realizados en los archivos al área de preparación (también conocida como "staging area").
+
+**Añadir un archivo específico:**
+  ```bash
+    git add <file_name>
+  ```
+
+**Añadir todos los archivos:**
+  ```bash
+    git add .
+  ```
+
+**[⬆ Volver al Índice](#índice)**
+
+--- 
 
 #### **git branch**
 
