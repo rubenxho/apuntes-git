@@ -11,12 +11,14 @@
     - [git add](#git-add)
     - [git branch](#git-branch)
     - [git clone](#git-clone)
+    - [git commit](#git-commit)
     - [git config](#git-config)
     - [git diff](#git-diff)
     - [git fetch](#git-fetch)
     - [git log](#git-log)
     - [git merge](#git-merge)
     - [git pull](#git-pull)
+    - [git push](#git-push)
     - [git remote](#git-remote)
     - [git stash](#git-stash)
     - [git status](#git-status)
@@ -73,6 +75,8 @@ El comando `git add` se utiliza para preparar archivos o cambios específicos pa
     git add .
   ```
 
+Con este comando pasaremos nuestros cambios del `Working Directory` al `Staging Area`.
+
 **[⬆ Volver al Índice](#índice)**
 
 --- 
@@ -122,6 +126,22 @@ El comando `git clone` se utiliza para crear una copia local de un repositorio G
   ```bash
     git clone REPOSITORY_URL
   ```
+
+**[⬆ Volver al Índice](#índice)**
+
+--- 
+
+#### **git commit**
+
+El comando `git commit` se utiliza para crear un nuevo punto de control en la historia de versiones de tu proyecto. Un "commit" representa un conjunto de cambios que se han preparado y confirmado en tu repositorio (se le asigna un identificador unico asociado a este commit llamado hash por el cuando se puede rastrear).
+
+  ```bash
+    git commit -m "commit description"
+  ```
+
+Es importante tener en cuenta que los commits son locales hasta que se envían al repositorio remoto utilizando el comando `git push`. Esto significa que otros colaboradores no podrán ver tus commits hasta que los envíes al servidor central.
+
+Con este comando pasaremos nuestros cambios del `Staging Area` al `Local Repository`.
 
 **[⬆ Volver al Índice](#índice)**
 
@@ -296,6 +316,26 @@ El comando `git pull` es utilizado para combinar los cambios de un repositorio r
 **Enlaces de interés:**  
 - **[Comando git fetch](#git-fetch)**
 - **[Comparación entre git pull y git fetch](#Comparación-entre-git-pull-y-git-fetch)**
+
+**[⬆ Volver al Índice](#índice)**
+
+---
+
+#### **git push**
+
+El comando `git push` es utilizado para enviar los commits locales (es decir, los cambios confirmados en tu repositorio local) al repositorio remoto. Esto actualiza la rama correspondiente en el servidor remoto con los cambios que has realizado en tu repositorio local.
+
+**Sintaxis basica:** 
+  ```bash
+    git push <repository> <branch>
+  ```
+
+**Sintaxis por defecto, en donde tomara el repositorio como origin y la branch sera en la que nos encontramos:** 
+  ```bash
+    git push
+  ```
+
+Con este comando pasaremos nuestros cambios del `Local Repository` al `Remote Repository`.
 
 **[⬆ Volver al Índice](#índice)**
 
