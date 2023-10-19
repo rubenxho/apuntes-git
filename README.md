@@ -10,6 +10,7 @@
   - [Comandos Basicos](#comandos-basicos)
     - [git add](#git-add)
     - [git branch](#git-branch)
+    - [git checkout](#git-checkout)
     - [git clone](#git-clone)
     - [git commit](#git-commit)
     - [git config](#git-config)
@@ -129,6 +130,43 @@ El comando `git clone` se utiliza para crear una copia local de un repositorio G
 
   ```bash
     git clone REPOSITORY_URL
+  ```
+
+**[⬆ Volver al Índice](#índice)**
+
+--- 
+
+#### **git clone**
+
+El comando `git checkout` tiene varias funcionalidades, dependiendo del contexto en el que se utiliza. Se puede ejecutar sobre archivos, commits y ramas.
+
+**Cambiar a una rama existente:**
+  ```bash
+    git checkout <branch>
+  ```
+
+**Crear rama y cambiarme a ella:**
+  ```bash
+    git checkout -b <branch>
+  ```
+
+**Cambiar a una rama remota:**
+  ```bash
+    git fetch 
+    git checkout -b <remotebranch> origin/<remotebranch>
+  ```
+
+**detached HEAD**
+
+El HEAD es la forma en la que Git hace referencia al commit actual, De forma interna, el comando git checkout simplemente actualiza el HEAD para que apunte a la rama o al commit indicado. Cuando se hace `git checkout` a una rama, no hay ningun problema, pero cuando haces `git checkout` de un commit, pasa al estado `detached HEAD`.
+
+El `detached HEAD` es un estado que indica que estas desconectado del desarrollo del proyecto, en donde puedes mirar el proyecto, hacer pruebas, cambiar archivos e incluso hacer commits sin impactar ninguna rama, es decir todo lo que se haga en este estado se perdera cuando cambies a una de las ramas existentes. Sí se quisiera mantener estos nuevos cambios o funcionalidades se debe crear una nueva rama en donde si quedaran rastreados estos cambios y los commits asociados.
+
+El desarrollo del codigo siempre debe hacerse en una rama no en commit y por ende en un estado `detached HEAD` , de esta manera siempre tendremos una referencia a la cual hacer nuevos commits. Este estado es util para hacer pruebas o revisar commits anteriores y luego continuar trabajando con nuestra como antes.
+
+**Cambiar a una commit antiguo:**
+  ```bash
+    git checkout -b <commit>
   ```
 
 **[⬆ Volver al Índice](#índice)**
