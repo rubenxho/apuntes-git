@@ -185,6 +185,20 @@ Es importante tener en cuenta que los commits son locales hasta que se envían a
 
 Con este comando pasaremos nuestros cambios del `Staging Area` al `Local Repository`.
 
+Otra utilidad de este comando es el comando `git commit --amend` es una herramienta útil que te permite realizar cambios adicionales al commit más reciente en tu historial. Esto puede ser útil si olvidaste incluir algunos archivos o cometiste errores en el mensaje de commit. Es importante tener en cuenta que cuando haces esto, se crea un nuevo commit que reemplaza al anterior en tu historial. Esto significa que el commit original se elimina y se reemplaza por el nuevo commit con el mensaje y/o los archivos actualizados. Por lo que solo se debe utilizar con commits que esten en nuestro repositorio local, si ya hemos subido un commit al remoto en vez de usar este comando es mejor hacer un nuevo commit con los cambios nuevos.
+
+  ```bash
+    git commit --amend
+  ```
+
+Si solo deseas cambiar el mensaje del commit, simplemente editas el texto, guardas y cierras el editor. Si deseas incluir archivos adicionales, los añades al área de preparación (staging) con `git add` y luego ejecutas `git commit --amend`
+
+Al ejecutar este comando se abrira nuestro editor de texto debemos hacer uso de los siguientes comandos:
+
+ 1. `i` para poder escribir, con esto vamos a poder editar el mensaje del commit.
+ 2. `esc` para dejar de escribir.
+ 3. `:wq` `:w` se utiliza para guardar el archivo que estás editando, mientras que `:q` se utiliza para salir del editor. Si realizas ambos comandos juntos, `:wq` estarás guardando el archivo y saliendo del editor en un solo paso.
+
 **[⬆ Volver al Índice](#índice)**
 
 --- 
