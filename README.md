@@ -432,6 +432,31 @@ El comando `git remote` es utilizado para administrar los repositorios remotos e
 
 ---
 
+#### **git reset**
+
+El comando `git reset` es utilizado para deshacer cambios. Se utiliza principalmente de tres formas distintas, usando los siguientes argumentos `--soft`, `--mixed` y `--hard`.
+
+  ```bash
+    git reset <arg> <commit>
+  ```
+
+  1. `--soft` actualiza el historial de commits dejando de primero al commit especificado y todos los cambios que se hayan deshecho quedan en el staging area.
+  2. `--mixed` es el modo de funcionamiento predeterminado. Actualiza el historial de commits dejando de primero al commit especificado y todos los cambios que se hayan deshecho se mueven al working directory.
+  3. `--hard` es la opción más directa, peligrosa y habitual. Actualiza el historial de commits dejando de primero al commit especificado y todos los cambios que se hayan deshecho se perderan, dejando el working directory como se encontraba en el commit indicado.
+
+**No usarlo en repostiorios remotos**
+No se debe utilizar nunca `git reset` sobre ningun commit que se haya publicado en un repositorio remoto, ya que es muy probable que el resto de desarrolladores dependan de ella. 
+
+Eliminar un commit que otros desarrolladores han seguido desarrollando supone un problema grave para la colaboración. Cuando intenten sincronizarse con tu repositorio, parecerá que un pedazo del historial del proyecto ha desaparecido repentinamente. 
+
+Cuando agregues un nuevo commit despueste de hacer un `git reset`, Git te alertara que tu historial local no coincide con el historial remoto, ya que en tu local has eliminado una cierta cantidad de commits que siguen apareciendo en el remoto. 
+
+Por lo tanto solo se debe usar `git reset` en tu repositorio local, y no en commits que han sido publicados. Si necesitas arreglar un commit de un repositorio remoto, el comando `git revert` ha sido creado especificamente para este proposito.
+
+**[⬆ Volver al Índice](#índice)**
+
+---
+
 #### **git show**
 
 El comando `git show` es utilizado para ver información detallada sobre un commit específico.
