@@ -21,6 +21,9 @@
     - [git push](#git-push)
     - [git reflog](#git-reflog)
     - [git remote](#git-remote)
+    - [git reset](#git-reset)
+    - [git revert](#git-revert)
+    - [git show](#git-show)
     - [git stash](#git-stash)
     - [git status](#git-status)
     - [git switch](#git-switch)
@@ -424,6 +427,50 @@ El comando `git remote` es utilizado para administrar los repositorios remotos e
 **Enlaces de interés:**  
 - **[Múltiples repositorios remotos](#Múltiples-repositorios-remotos)**
 - **[Trabajar con ramas remotas](#Trabajar-con-ramas-remotas)**
+
+**[⬆ Volver al Índice](#índice)**
+
+---
+
+#### **git show**
+
+El comando `git show` es utilizado para ver información detallada sobre un commit específico.
+
+**Ver detalles del último commit:**
+  ```bash
+    git show
+  ```
+
+**Ver un commit específico por su hash:**
+  ```bash
+    git show <commit>
+  ```
+
+**Ver los cambios en un archivo específico en un commit:**
+  ```bash
+    git show <commit> example.txt
+  ```
+
+**Ver cambios en un directorio específico en un commit:**
+  ```bash
+    git show <commit> directory/
+  ```
+
+**Renombra un repositorio remoto:**
+  ```bash
+    git remote rename <name> <new_name>
+  ```
+
+**Ver cambios de forma Compacta:**
+  ```bash
+    git show --compact-summary
+  ```
+
+Algunas opciones adicionales con el comando git show, para cambiar la forma en que se muestra la información: 
+
+  1. `----compact-summary ` Muestra un resumen mas compacto.
+  2. `--name-only` Muestra solo los nombres de los archivos alterados.
+  3. `--name-status` Muestra los nombres de los archivos y el estado de los cambios (adiciones, modificaciones, eliminaciones, etc.).
 
 **[⬆ Volver al Índice](#índice)**
 
