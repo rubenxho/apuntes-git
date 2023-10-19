@@ -457,6 +457,24 @@ Por lo tanto solo se debe usar `git reset` en tu repositorio local, y no en comm
 
 ---
 
+#### **git revert**
+
+El comando `git revert` es utilizado para deshacer cambios efectuados en el historial de commits de un repositorio, En lugar de eliminar el commit del historial del proyecto, invierte los cambios introducidos por el commit indicado y creara un nuevo commit con el contenido inverso resultante. Con esto no se altera el historial de commits, sino que simplemente tendremos un nuevo commit en el historial con los cambios revertidos, lo cual resulta importante ya que no afecta el desarrollo del resto del equipo.
+
+```bash
+    git revert <commit>
+  ```
+
+`git revert` presenta dos ventajas importantes con respecto al `git reset`. 
+
+  1. No cambia el historial de commits del proyecto, lo que la convierte en una operación "segura" para los commits que ya se han publicado en un repositorio compartido.
+  2. El comando `git revert` puede dirigirse a un commit en concreto de manera arbitraría dentro del historial es decir no afecta todos los commits previos al que queremos, mientras que `git reset` solo puede volver hacia atrás desde el commit actual, teniendo que eliminar cada uno de los commits previos. 
+  
+
+**[⬆ Volver al Índice](#índice)**
+
+---
+
 #### **git show**
 
 El comando `git show` es utilizado para ver información detallada sobre un commit específico.
